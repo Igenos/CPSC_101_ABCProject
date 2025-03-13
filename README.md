@@ -3,21 +3,21 @@
 A project focussed on developing an Abstract Base Class (abc) in python. An ABC is annalogous to a template for an object. There are two main reasons why one would implement an ABC.
 
 1. To streamline the creation of various instances of similar objects. For example, if you had many instances of a animal object and wanted them all to the properties "name" & "food_type" with the method "feed".
-    > from animalABC import Animal
-    >
-    > class Animal(ABC):
-    >
-    >     def __feed__(self, daily_feedings: int = 3) -> str:
-    >         return(f"{self.name} must be fed {self.food_type} .")
-    >
-    > dogs: list[dog] = [
-    >    dog("Alice" , "meat") , 
-    >    dog("Max" , "vegetarian feed") , 
-    >    dog("Charlie" , "double meat portions") , 
-    >    dog("Nicole" , "guten free feed") ]
-    > 
-    > for dog in dogs:
-    >     print(dog.__feed__())
+
+'''python
+from animalABC import Animal
+class Animal(ABC):
+    def __feed__(self, daily_feedings: int = 3) -> str:
+        return(f"{self.name} must be fed {self.food_type} .")
+dogs: list[dog] = [
+   dog("Alice" , "meat") , 
+   dog("Max" , "vegetarian feed") , 
+   dog("Charlie" , "double meat portions") , 
+   dog("Nicole" , "guten free feed") ]
+
+for dog in dogs:
+    print(dog.__feed__())
+'''
 
 2. As a project management tool to guide the creation of a complex object. It can ensure the subclass created can be implemented safely into a larger body of code without the team building it requiring full knowledge of it's implementation.
 
