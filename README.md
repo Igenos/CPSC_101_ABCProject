@@ -4,7 +4,7 @@ A project focussed on developing an Abstract Base Class (abc) in python. An ABC 
 
 1. To streamline the creation of various instances of similar objects. For example, if you had many instances of a animal object and wanted them all to the properties "name" & "food_type" with the method "feed".
 
-'''python
+'''
 from animalABC import Animal
 class Animal(ABC):
     def __feed__(self, daily_feedings: int = 3) -> str:
