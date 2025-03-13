@@ -3,10 +3,9 @@ from abc import ABC, abstractmethod
 class Animal(ABC):
     """Must iclude the properties ( name, food_type )"""
 
-    # @property
-    # @abstractmethod
-    # def name(self):
-    #     pass  # Abstract property, must be implemented by subclasses
+    @abstractmethod
+    def eat(self):
+        pass  # Abstract property, must be implemented by subclasses
 
     # @property
     # @abstractmethod
