@@ -17,13 +17,41 @@ An ABC is annalogous to a template for an object. It is by deffinition impossibl
 
 3. If a bank had a specific way it wanted online transactions processed and logged. An ABC would be created for transactions, and the different types of transactions could be derived from that. For example: mastercard(Transaction), visa(Transaction), etc...
 
-A properly implemented ABC will not allow the uer to implement an instance of the base class. In order to implement an instance of the ABC they must:
+A properly implemented ABC will not allow the user to implement an instance of the base class. In order to implement an instance of the ABC they must:
 
 - Define a subclass of the ABC.
 - Then define all properties and methods within the subclass. 
 - At compilation, it will return an error if any of the requirements are not defined.
     - Properties required by the parent ABC are defined by the @properies decorator.
     - Methods required by the parent ABC simply need to be included.
+
+## Structure for Grid_Game
+
+The ABC that is core to this project will define all the components absolutely required for a game with the following constraints:
+
+- The game is played on a 2-dimensional plane.
+  - All spaces within that plane are defined by the vector $(x,y) \in \mathbb{Z}$
+  - The playable area will be a finite subset of the above.
+  - Each vector may have more dimensions in order to store other values. For example:
+    - A game on an 8 x 8 grid with 2 color options for tiles / peices and 6 different peices might have their vector spaces defined as:
+    - (x, y, space_color, piece) where $x,y\in\mathbb{Z}:0\geq x,y \geq 7$ , space_color is $\in \mathbb{Z}:0\geq$ val $\geq1$, and peice is $\in\mathbb{Z}:-6\geq$ piece $\geq6$.
+- The game will have $\geq1$ agents that can effect the board state.
+  - Each agent may be either a human player or an algorithm.
+  - Play progresses in turns where one agent is active and no others can effect the board state.
+  - Each agent will be an object that is passed the board state and returns their move.
+  - All agents have the same, or mirrored, win condition.
+- The game end condition will be checked for after the board state is updated with an agents move and before play passes for the next agent.
+
+## Methods Required
+
+1. **Game Record :** This ?file? will store all initial conditions, all board states passed to it, and all other variables that the current game uses.
+2. **Initial Board State :** This will store all conditions required for the start of the game. It may also contain prompts from the user for any initial conditions defined as mutable.
+3. **Start :** This function takes the return of the Initial Board State as an arg, creates a new Game Record and sets the first_move flag.
+4. **Choose Next Player :** A function that takes the last player as an arg and returns the next player, or returns the first player if the first_move flag is True.
+5. **Player Move :** A function that takes the current board state as an arg and returns a move. This contains all the logic or options that agent has available to them.
+6. **Update Board State :** A function that takes a player move and the current board state as args, verifies their validity, then returns a new immutable board state object that stores all the vectors for the spaces and the move argument it was originally passed. It will have the turn number in it's name and that will be stored in the Game Record.
+7. **Check for Gane End :** A function that checks the board state against the defined end conditions and returns either a player or False.
+8. 
 
 ## Dependencies
 
