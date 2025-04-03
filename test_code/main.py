@@ -7,9 +7,8 @@ class dog(Animal):
         self.name: str = name
         self.food_type: str = food_type
 
-    @abstractmethod
     def eat(self):
-        return(f"{self.name} ate the {self.food_type}")
+        return(f"{self.name} ate the {self.food_type}.")
 
     # @property
     # def name(self):
@@ -31,6 +30,8 @@ if __name__ == '__main__':
     # Use adstract base method to feed the dogs.from animalABC import Animal
     for dog in dogs:
         print(dog.__feed__())
+
+    print("\n\n")
 
     for dog in dogs:
         print(dog.eat())

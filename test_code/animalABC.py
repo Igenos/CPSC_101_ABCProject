@@ -15,7 +15,7 @@ class Animal(ABC):
 
     # The double underscores around feed is an example on "name mangling", what that means is that this method cannot be overwritten by the child class.
     def __feed__(self, daily_feedings: int = 3) -> str:
-        return(f"{self.name} must be fed {self.food_type} .")
+        return(f"{self.name} must be fed {self.food_type}.")
     
     @abstractmethod
     def eat(self: object) -> str:

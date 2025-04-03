@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-def Board_State():
+def Board_State(ABC):
     pass
 
 class Grid_Game(ABC):
@@ -33,14 +33,15 @@ class Grid_Game(ABC):
         pass
 
     @abstractmethod
-    def setup_board(self) -> bool:
-        """Creates a list of args to pass to game_record in order to create the game file.
-        - returns true if no exceptions are raised."""
+    def setup_board(self) -> list[tuple]:
+        """Define all the values that will be stored in order to keep track of the game as at progresses.
+        Create the empty table and then create the list of first values toi pass to game_record.
+           These will be in pairs with column headers first, then the first value."""
         pass
 
     @abstractmethod
     def game_record(self):
-        """Creates a new save game file and verifies it's permissions are rw."""
+        """Whenever this function is called, it adds a new row to the game record"""
         pass
 
     @abstractmethod
