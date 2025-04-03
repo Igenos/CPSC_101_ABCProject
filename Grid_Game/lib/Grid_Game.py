@@ -1,9 +1,7 @@
 from abc import ABC, abstractmethod
 
-class Board_State():
-
-    def __init__(self):
-        pass
+def Board_State():
+    pass
 
 class Grid_Game(ABC):
     """This ABC is to be used to create a game played on a grid. It inherits from ABC.
@@ -29,11 +27,6 @@ class Grid_Game(ABC):
     
     """
 
-    @property
-    @abstractmethod
-    def name(self) -> str:
-        pass
-
     @abstractmethod
     def start_game(self) -> bool:
         """This function takes the return of the Initial Board State as an arg, creates a new Game Record and sets the first_move flag."""
@@ -46,7 +39,7 @@ class Grid_Game(ABC):
         pass
 
     @abstractmethod
-    def game_record(self) -> __path__:
+    def game_record(self):
         """Creates a new save game file and verifies it's permissions are rw."""
         pass
 
