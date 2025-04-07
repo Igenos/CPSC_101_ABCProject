@@ -82,7 +82,7 @@ Subsequent Turns
 ### Method Deffinitions
 
 1. `start_game(path to current game file) -> bool`
-    - This function takes the return of the Initial Board State as an arg, creates a new Game Record and sets the first_move flag.
+    - This function holds the logic of game progression and recursively calls itself until game end.
 2. `setup_board() -> bool`
     - Creates a list of args to pass to game_record in order to create the game file.
     - returns true if no exceptions are raised.

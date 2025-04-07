@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-def Board_State(ABC):
+class Board_State(ABC):
     pass
 
 class Grid_Game(ABC):
@@ -28,16 +28,16 @@ class Grid_Game(ABC):
     """
 
     @abstractmethod
-    def start_game(self) -> bool:
+    def game_loop_onclick(self) -> bool:
         """This function takes the return of the Initial Board State as an arg, creates a new Game Record and sets the first_move flag."""
         pass
 
-    @abstractmethod
-    def setup_board(self) -> list[tuple]:
-        """Define all the values that will be stored in order to keep track of the game as at progresses.
-        Create the empty table and then create the list of first values toi pass to game_record.
-           These will be in pairs with column headers first, then the first value."""
-        pass
+    # @abstractmethod
+    # def setup_board(self) -> list[tuple]:
+    #     """Define all the values that will be stored in order to keep track of the game as at progresses.
+    #     Create the empty table and then create the list of first values toi pass to game_record.
+    #        These will be in pairs with column headers first, then the first value."""
+    #     pass
 
     @abstractmethod
     def game_record(self):
@@ -63,7 +63,7 @@ class Grid_Game(ABC):
         """A function that checks the board state against the defined end conditions and returns either a player or False."""
         pass
 
-    @abstractmethod
-    def progress_game(self, bool) -> None:
-        """Chooses either to progress to the next turn or do something else at game end."""
-        pass
+    # @abstractmethod
+    # def progress_game(self, bool) -> None:
+    #     """Chooses either to progress to the next turn or do something else at game end."""
+    #     pass
