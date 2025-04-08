@@ -93,17 +93,13 @@ class Grid_Game(ABC):
         """
 
         if current_board.current_player < current_board.player_count:
-            return Board_State(
-                turn=current_board.turn + 1,
-                current_player=current_board.current_player + 1,
-                moves_played=current_board.board_vectors.copy()
-            )
+            current_board.turn += 1
+            current_board.current_player += 1
+            return current_board
         else:
-            return Board_State(
-                turn=current_board.turn + 1,
-                current_player=1,
-                moves_played=current_board.board_vectors.copy()
-            )
+            current_board.turn += 1
+            current_board.current_player = 1
+            return current_board
         
     @abstractmethod
     def player_move(self, x_dim, y_dim, piece: tuple = None) -> Move:

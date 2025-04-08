@@ -38,6 +38,13 @@ class tic_tac_toe(Grid_Game):
         self.root = tk.Tk()
         self.root.title("Tic-Tac-Toe")
 
+        # Create message label and reset button
+        self.message_label = tk.Label(self.root, text="Player 1's turn", font=("Helvetica", 12))
+        self.message_label.grid(row=self.y_max, column=0, columnspan=self.x_max)
+
+        self.reset_button = tk.Button(self.root, text="Reset", command=self.reset_game)
+        self.reset_button.grid(row=self.y_max + 1, column=0, columnspan=self.x_max)
+
         self.buttons = []
         for y_grid in range(self.y_max):
             row_of_buttons = []
@@ -59,13 +66,32 @@ class tic_tac_toe(Grid_Game):
         self.root.mainloop()
 
     def game_loop_onclick(self, x_dim, y_dim) -> None:
-        
+
         move = self.player_move(x_dim, y_dim)
         updated_board = self.update_board_state(self.current_board, move)
         updated_board = self.check_win_condition(updated_board)
         self.game_record(updated_board)
+
+        if updated_board.is_winner:
+            self.message_label.config(text=f"Player {updated_board.current_player} wins!")
+        elif updated_board.is_tie:
+            self.message_label.config(text="It's a tie!")
+        else:
+            self.message_label.config(text=f"Player {updated_board.current_player}'s turn")
+
         self.current_board = self.choose_next_player(updated_board)
-        print(self.current_board)
+
+    def reset_game(self):
+        """Resets the game state and UI to start a new game."""
+        
+        # TODO Save game using game_record and start new record.
+        
+        self.current_board = TTT_Board()
+        for y in range(self.y_max):
+            for x in range(self.x_max):
+                self.buttons[y][x]["text"] = ""
+                self.buttons[y][x]["state"] = "normal"
+        self.message_label.config(text="Player 1's turn")
 
     def game_record(self, board_update: TTT_Board) -> bool:
         return True
@@ -104,11 +130,13 @@ class tic_tac_toe(Grid_Game):
                 pos_direction = (move[0] + dx, move[1] + dy)
                 while pos_direction in current_board.position_map and current_board.position_map[pos_direction] == player:
                     length += 1
+                    print(length)
                     pos_direction = (pos_direction[0] + dx, pos_direction[1] + dy)
 
                 neg_direction = (move[0] - dx, move[1] - dy)
                 while neg_direction in current_board.position_map and current_board.position_map[neg_direction] == player:
                     length += 1
+                    print(length)
                     neg_direction = (neg_direction[0] - dx, neg_direction[1] - dy)
 
                 if length >= self.win_length:
@@ -129,10 +157,8 @@ class tic_tac_toe(Grid_Game):
             for y_dim in range(3):
                 for x_dim in range(3):
                     self.buttons[y_dim][x_dim]["state"] = "disabled"
-            game_end_board = current_board
-            game_end_board.is_winner = True
             print(f"winner is player {current_board.current_player}")
-            return game_end_board
+            return current_board
 
         return current_board
 
