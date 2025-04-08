@@ -106,6 +106,7 @@ class tic_tac_toe(Grid_Game):
 
     def choose_next_player(self, current_board: board_state) -> board_state:
         """Determines the next player and returns a new board state."""
+        
         if current_board.current_player < current_board.player_count:
             return board_state(
                 turn=current_board.turn + 1,
@@ -128,7 +129,7 @@ class tic_tac_toe(Grid_Game):
 
     def update_board_state(self, old_board: board_state, played_move: Move) -> board_state:
         """Returns a new board state object that includes the latest move."""
-        
+
         new_board_vectors: dict = old_board.board_vectors.copy()
         new_board_vectors[f"Turn {old_board.turn}"] = played_move
         return board_state(
