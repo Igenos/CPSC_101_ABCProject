@@ -1,0 +1,18 @@
+INFO:__main__:2025-04-08 19:16:31.690345 - New game started
+INFO:root:2025-04-08 19:16:41.243591 - Game executed successfully.
+INFO:__main__:2025-04-08 19:33:55.801108 - New game started
+INFO:root:2025-04-08 19:34:00.322238 - Game executed successfully.
+INFO:__main__:2025-04-08 20:51:53.452809 - New game started
+INFO:root:2025-04-08 20:51:59.612198 - Game executed successfully.
+INFO:__main__:2025-04-08 20:52:10.629235 - New game started
+INFO:root:2025-04-08 20:53:40.922664 - Game executed successfully.
+INFO:__main__:2025-04-08 20:53:53.621613 - New game started
+INFO:root:2025-04-08 20:54:37.346070 - Game executed successfully.
+INFO:__main__:2025-04-09 15:29:36.717421 - New game started
+INFO:root:2025-04-09 15:30:37.693258 - Game executed successfully.
+INFO:__main__:2025-04-09 15:55:53.882757 - New game started
+INFO:__main__:2025-04-09 15:55:53.882757 - Path to working directory : <function Grid_Game.resource_path at 0x00000283459A6DE0>
+INFO:__main__:2025-04-09 15:55:53.882757 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 15:55:53.882757 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 15:55:53.882757 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 15:56:02.906884 - Game executed successfully.

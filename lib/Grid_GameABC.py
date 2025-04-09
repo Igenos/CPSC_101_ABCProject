@@ -1,7 +1,23 @@
 from abc import ABC, abstractmethod
 
+
+# Used for saving games to save_directory
+import sqlite3
+
+# Logging dependencies
+import datetime 
+import logging
 import sys
 import os
+
+# Used to make the game portable
+from pathlib import Path
+
+# UI dependencies
+from tkinter import *
+from tkinter import ttk
+
+
 
 class Move():
     def __init__(self, player: int, player_move: list[int], piece: tuple = None):
@@ -40,10 +56,10 @@ class Board_State(ABC):
 
     def __init__(self, turn: int = 1, current_player: int = 1, moves_played: dict = None, player_count: int = 2, is_winner: bool = False, *kwargs):
         super().__init__()
-        self.turn = turn
-        self.player_count = player_count
-        self.current_player = current_player
-        self.is_winner = is_winner
+        self.turn: int = turn
+        self.player_count: int = player_count
+        self.current_player: int = current_player
+        self.is_winner: bool = is_winner
         self.is_tie: bool = False
         self.board_vectors: dict = {} if moves_played is None else moves_played
 
