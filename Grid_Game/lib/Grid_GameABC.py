@@ -1,5 +1,8 @@
 from abc import ABC, abstractmethod
 
+import sys
+import os
+
 class Move():
     def __init__(self, player: int, player_move: list[int], piece: tuple = None):
         """Represents a single move made by a player on the grid.
@@ -68,6 +71,12 @@ class Grid_Game(ABC):
     Subclasses must implement methods for handling moves, board updates,
     win conditions, and data recording.
     """
+    @staticmethod
+    def resource_path(relative_path):
+        """ Get absolute path to resource (handles PyInstaller and normal run). """
+        if hasattr(sys, '_MEIPASS'):
+            return os.path.join(sys._MEIPASS, relative_path)
+        return os.path.join(os.path.abspath("."), relative_path)
 
     @abstractmethod
     def game_loop_onclick(self) -> bool:

@@ -1,4 +1,3 @@
-
 # Import assests from the ABC. Includes Board_State, Move, and Grid_Game
 from lib.Grid_GameABC import *
 
@@ -27,12 +26,12 @@ class tic_tac_toe(Grid_Game):
         super().__init__()
 
         # Find out where we are.
-        self.current_directory: Path = Path(__file__).parent.absolute()
-        self.save_directory: Path = self.current_directory / 'current_game.db'
-        self.log_directory: Path = self.current_directory / 'tttgame.log'
-        self.image_assets_directory: Path = self.current_directory / 'game/images/'
+        self.save_directory: Path = Path(self.resource_path('Grid_Game/lib/current_game.db'))
+        self.log_directory: Path = Path(self.resource_path('Grid_Game/lib/tttgame.log'))
+        self.image_assets_directory: Path = Path(self.resource_path('Grid_Game/game/images/')).absolute()
 
         # SQLite setup
+        save_file = open(self.save_directory, "r")
         self.connection = sqlite3.connect(self.save_directory)
         self.cursor = self.connection.cursor()
         self.table_name: str = f"Game({time})"
@@ -47,17 +46,16 @@ class tic_tac_toe(Grid_Game):
         # Create interface objects using tkinter.
         self.root = Tk()
         self.root.title("Tic-Tac-Toe")
-
         self.main_frame = Frame(self.root, padx= 10, pady=10)
         
+        # Logo image.
         logo_image = PhotoImage(file=self.image_assets_directory / 'ttt_logo.png')
-        # self.logo_frame = Frame(self.root, padx= 10, pady=10)
         self.logo = ttk.Label(self.root)
         self.logo['image'] = logo_image
         self.logo.grid(row= 0, column=0)
-
+        
+        # Create grid to contain ttt buttons
         self.main_frame.grid(row=self.y_max+3, column=0, columnspan=self.x_max, sticky=(N,W,E,S))
-        # self.main_frame.grid['padding'] = 5
         self.root.columnconfigure(0, weight= 1)
         self.root.rowconfigure(0, weight=1)
         
@@ -65,10 +63,11 @@ class tic_tac_toe(Grid_Game):
         self.message_label = Label(self.main_frame, text="Player 1's turn", font=("Helvetica", 12))
         self.message_label.grid(row=self.y_max +2, column=1)
         
+        # Create Reset button.
         self.reset_button = Button(self.main_frame, text="Reset", command=self.reset_game)
         self.reset_button.grid(row=self.y_max+3, column=1)
 
-
+        # Create a m x n grid for the game.
         self.buttons = []
         for y_grid in range(self.y_max):
             row_of_buttons = []
@@ -88,6 +87,7 @@ class tic_tac_toe(Grid_Game):
 
         # Start GUI mainloop.
         self.root.mainloop()
+
 
     def game_loop_onclick(self, x_dim, y_dim) -> None:
 
@@ -120,7 +120,9 @@ class tic_tac_toe(Grid_Game):
         self.message_label.config(text="Player 1's turn")
 
     def game_record(self, board_update: TTT_Board) -> bool:
+        # TODO make this.
         return True
+
 
     def player_move(self, x_dim, y_dim, piece: tuple = None) -> Move:
 
@@ -128,6 +130,7 @@ class tic_tac_toe(Grid_Game):
         self.buttons[y_dim][x_dim]["text"] = "X" if self.current_board.current_player == 1 else "O"
         
         return Move(self.current_board.current_player, [x_dim, y_dim])
+
 
     def update_board_state(self, old_board: TTT_Board, played_move: Move) -> TTT_Board:
         
@@ -139,8 +142,8 @@ class tic_tac_toe(Grid_Game):
             moves_played=new_board_vectors
         )
 
+
     def check_win_condition(self, current_board: TTT_Board) -> TTT_Board:
-        """Checks the board for a win or tie condition and returns the updated state."""
 
         directions = [
             (-1, -1), (-1, 0), (-1, 1),
@@ -156,13 +159,13 @@ class tic_tac_toe(Grid_Game):
                 pos_direction = (move[0] + dx, move[1] + dy)
                 while pos_direction in current_board.position_map and current_board.position_map[pos_direction] == player:
                     length += 1
-                    print(length)
+                    self.logger.debug(f"Checking length in direction ({dx}, {dy}) -> {length}")
                     pos_direction = (pos_direction[0] + dx, pos_direction[1] + dy)
 
                 neg_direction = (move[0] - dx, move[1] - dy)
                 while neg_direction in current_board.position_map and current_board.position_map[neg_direction] == player:
                     length += 1
-                    print(length)
+                    self.logger.debug(f"Checking length in direction ({dx}, {dy}) -> {length}")
                     neg_direction = (neg_direction[0] - dx, neg_direction[1] - dy)
 
                 if length >= self.win_length:
@@ -174,7 +177,7 @@ class tic_tac_toe(Grid_Game):
                 for x_dim in range(self.x_max):
                     self.buttons[y_dim][x_dim]["state"] = "disabled"
             current_board.is_tie = True
-            print("It's a tie!")
+            self.logger.debug(f"Tie check True")
             return current_board
 
         # Check for winner after all win conditions and  are verified
@@ -182,7 +185,7 @@ class tic_tac_toe(Grid_Game):
             for y_dim in range(3):
                 for x_dim in range(3):
                     self.buttons[y_dim][x_dim]["state"] = "disabled"
-            print(f"winner is player {current_board.current_player}")
+            self.logger.debug(f"Win check true")
             return current_board
 
         return current_board
