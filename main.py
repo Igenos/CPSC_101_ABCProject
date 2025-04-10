@@ -1,5 +1,23 @@
+from abc import ABC, abstractmethod
+
 # Import assests from the ABC. Includes Board_State, Move, and Grid_Game
-from Grid_GameABC import *
+import Grid_GameABC
+from Grid_GameABC import Grid_Game, Board_State, Move
+
+# Used for saving games to save_directory
+import sqlite3
+
+# Logging dependencies
+import datetime 
+import logging
+
+
+# Used to make the game portable
+from pathlib import Path
+
+# UI dependencies
+from tkinter import *
+from tkinter import ttk
 
 class TTT_Board(Board_State):
     def __init__(self, turn = 1, current_player = 1, moves_played = None, player_count = 2, is_winner = False):

@@ -4,4 +4,5 @@ pyinstaller --windowed --onedir ^
   --add-data "game/saves/saved_games.db;game/saves" ^
   --add-data "game/images/ttt_logo.png;game/images" ^
   --add-data "lib/tttgame.log;lib" ^
+  --add-data "Grid_GameABC.py;." ^
   main.py

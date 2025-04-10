@@ -1,0 +1,234 @@
+INFO:__main__:2025-04-08 19:16:31.690345 - New game started
+INFO:root:2025-04-08 19:16:41.243591 - Game executed successfully.
+INFO:__main__:2025-04-08 19:33:55.801108 - New game started
+INFO:root:2025-04-08 19:34:00.322238 - Game executed successfully.
+INFO:__main__:2025-04-08 20:51:53.452809 - New game started
+INFO:root:2025-04-08 20:51:59.612198 - Game executed successfully.
+INFO:__main__:2025-04-08 20:52:10.629235 - New game started
+INFO:root:2025-04-08 20:53:40.922664 - Game executed successfully.
+INFO:__main__:2025-04-08 20:53:53.621613 - New game started
+INFO:root:2025-04-08 20:54:37.346070 - Game executed successfully.
+INFO:__main__:2025-04-09 15:29:36.717421 - New game started
+INFO:root:2025-04-09 15:30:37.693258 - Game executed successfully.
+INFO:__main__:2025-04-09 15:55:53.882757 - New game started
+INFO:__main__:2025-04-09 15:55:53.882757 - Path to working directory : <function Grid_Game.resource_path at 0x00000283459A6DE0>
+INFO:__main__:2025-04-09 15:55:53.882757 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 15:55:53.882757 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 15:55:53.882757 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 15:56:02.906884 - Game executed successfully.
+INFO:__main__:2025-04-09 16:00:34.449368 - New game started
+INFO:__main__:2025-04-09 16:00:34.449368 - Path to working directory : <function Grid_Game.resource_path at 0x0000018833896DE0>
+INFO:__main__:2025-04-09 16:00:34.449368 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:00:34.449368 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:00:34.449368 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:00:42.218690 - Game executed successfully.
+INFO:__main__:2025-04-09 16:03:36.076015 - New game started
+INFO:__main__:2025-04-09 16:03:36.076015 - Path to working directory : <function Grid_Game.resource_path at 0x0000015B71886DE0>
+INFO:__main__:2025-04-09 16:03:36.076015 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:03:36.076015 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:03:36.076015 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:03:46.902845 - Game executed successfully.
+INFO:__main__:2025-04-09 16:04:09.264616 - New game started
+INFO:__main__:2025-04-09 16:04:09.264616 - Path to working directory : <function Grid_Game.resource_path at 0x0000017DE0836DE0>
+INFO:__main__:2025-04-09 16:04:09.264616 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:04:09.264616 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:04:09.264616 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:04:14.855646 - Game executed successfully.
+INFO:__main__:2025-04-09 16:10:22.143562 - New game started
+INFO:__main__:2025-04-09 16:10:22.143562 - Path to working directory : <function Grid_Game.resource_path at 0x000001CC69FA6DE0>
+INFO:__main__:2025-04-09 16:10:22.143562 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:10:22.143562 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:10:22.143562 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:10:36.585958 - Game executed successfully.
+INFO:__main__:2025-04-09 16:14:31.744899 - New game started
+INFO:__main__:2025-04-09 16:14:31.744899 - Path to working directory : <function Grid_Game.resource_path at 0x000001D4AE316DE0>
+INFO:__main__:2025-04-09 16:14:31.744899 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:14:31.744899 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:14:31.744899 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:14:37.817716 - Game executed successfully.
+INFO:__main__:2025-04-09 16:16:22.013428 - New game started
+INFO:__main__:2025-04-09 16:16:22.013428 - Path to working directory : <function Grid_Game.resource_path at 0x00000143AACC6DE0>
+INFO:__main__:2025-04-09 16:16:22.013428 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:16:22.013428 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:16:22.013428 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:16:29.480406 - Game executed successfully.
+INFO:__main__:2025-04-09 16:16:41.409113 - New game started
+INFO:__main__:2025-04-09 16:16:41.409113 - Path to working directory : <function Grid_Game.resource_path at 0x000001FDA62C6DE0>
+INFO:__main__:2025-04-09 16:16:41.409113 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:16:41.409113 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:16:41.409113 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:16:53.658127 - Game executed successfully.
+INFO:__main__:2025-04-09 16:17:24.899886 - New game started
+INFO:__main__:2025-04-09 16:17:24.899886 - Path to working directory : <function Grid_Game.resource_path at 0x0000025946FE6DE0>
+INFO:__main__:2025-04-09 16:17:24.899886 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:17:24.899886 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:17:24.899886 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:__main__:2025-04-09 16:17:42.078875 - New game started
+INFO:__main__:2025-04-09 16:17:42.078875 - Path to working directory : <function Grid_Game.resource_path at 0x000001FE76F96DE0>
+INFO:__main__:2025-04-09 16:17:42.078875 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:17:42.078875 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:17:42.078875 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:17:44.658018 - Game executed successfully.
+INFO:__main__:2025-04-09 16:20:11.069689 - New game started
+INFO:__main__:2025-04-09 16:20:11.069689 - Path to working directory : <function Grid_Game.resource_path at 0x0000021F763F6DE0>
+INFO:__main__:2025-04-09 16:20:11.069689 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:20:11.069689 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:20:11.069689 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:__main__:2025-04-09 16:20:47.109633 - New game started
+INFO:__main__:2025-04-09 16:20:47.109633 - Path to working directory : <function Grid_Game.resource_path at 0x000002A274636DE0>
+INFO:__main__:2025-04-09 16:20:47.109633 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:20:47.109633 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:20:47.109633 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:__main__:2025-04-09 16:20:57.541802 - New game started
+INFO:__main__:2025-04-09 16:20:57.541802 - Path to working directory : <function Grid_Game.resource_path at 0x0000017506446DE0>
+INFO:__main__:2025-04-09 16:20:57.541802 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:20:57.541802 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:20:57.541802 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:__main__:2025-04-09 16:21:11.944790 - New game started
+INFO:__main__:2025-04-09 16:21:11.944790 - Path to working directory : <function Grid_Game.resource_path at 0x00000236E4A86DE0>
+INFO:__main__:2025-04-09 16:21:11.944790 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:21:11.944790 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:21:11.944790 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:22:21.913562 - Game executed successfully.
+INFO:__main__:2025-04-09 16:22:23.787249 - New game started
+INFO:__main__:2025-04-09 16:22:23.787249 - Path to working directory : <function Grid_Game.resource_path at 0x000002113E636DE0>
+INFO:__main__:2025-04-09 16:22:23.787249 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:22:23.787249 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:22:23.787249 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:22:25.417780 - Game executed successfully.
+INFO:__main__:2025-04-09 16:22:29.515011 - New game started
+INFO:__main__:2025-04-09 16:22:29.515011 - Path to working directory : <function Grid_Game.resource_path at 0x000002252D536DE0>
+INFO:__main__:2025-04-09 16:22:29.515011 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:22:29.515011 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:22:29.515011 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:22:31.157676 - Game executed successfully.
+INFO:__main__:2025-04-09 16:22:35.083962 - New game started
+INFO:__main__:2025-04-09 16:22:35.083962 - Path to working directory : <function Grid_Game.resource_path at 0x00000234B4FA6DE0>
+INFO:__main__:2025-04-09 16:22:35.083962 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:22:35.083962 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:22:35.083962 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:22:42.608049 - Game executed successfully.
+INFO:__main__:2025-04-09 16:22:44.900727 - New game started
+INFO:__main__:2025-04-09 16:22:44.900727 - Path to working directory : <function Grid_Game.resource_path at 0x00000250BCA86DE0>
+INFO:__main__:2025-04-09 16:22:44.900727 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:22:44.900727 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:22:44.900727 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:22:54.945703 - Game executed successfully.
+INFO:__main__:2025-04-09 16:22:57.292550 - New game started
+INFO:__main__:2025-04-09 16:22:57.292550 - Path to working directory : <function Grid_Game.resource_path at 0x000001EEF2B06DE0>
+INFO:__main__:2025-04-09 16:22:57.292550 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:22:57.292550 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:22:57.292550 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:23:22.668425 - Game executed successfully.
+INFO:__main__:2025-04-09 16:23:24.075905 - New game started
+INFO:__main__:2025-04-09 16:23:24.075905 - Path to working directory : <function Grid_Game.resource_path at 0x000002333D156DE0>
+INFO:__main__:2025-04-09 16:23:24.075905 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:23:24.075905 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:23:24.075905 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:23:32.589406 - Game executed successfully.
+INFO:__main__:2025-04-09 16:23:34.148516 - New game started
+INFO:__main__:2025-04-09 16:23:34.148516 - Path to working directory : <function Grid_Game.resource_path at 0x000001629B9D6DE0>
+INFO:__main__:2025-04-09 16:23:34.148516 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:23:34.148516 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:23:34.148516 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:24:39.537301 - Game executed successfully.
+INFO:__main__:2025-04-09 16:24:44.790349 - New game started
+INFO:__main__:2025-04-09 16:24:44.790349 - Path to working directory : <function Grid_Game.resource_path at 0x0000025F46FA6DE0>
+INFO:__main__:2025-04-09 16:24:44.790349 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 16:24:44.790349 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 16:24:44.790349 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 16:25:04.622425 - Game executed successfully.
+INFO:__main__:2025-04-09 17:11:24.824444 - New game started
+INFO:__main__:2025-04-09 17:11:24.824444 - Path to working directory : <function Grid_Game.resource_path at 0x000001C18CDC6DE0>
+INFO:__main__:2025-04-09 17:11:24.824444 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 17:11:24.824444 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:11:24.824444 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:11:28.838057 - Game executed successfully.
+INFO:__main__:2025-04-09 17:14:54.698966 - New game started
+INFO:__main__:2025-04-09 17:14:54.698966 - Path to working directory : <function Grid_Game.resource_path at 0x000002301F287560>
+INFO:__main__:2025-04-09 17:14:54.698966 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 17:14:54.698966 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:14:54.698966 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:15:04.816544 - Game executed successfully.
+INFO:__main__:2025-04-09 17:15:27.237723 - New game started
+INFO:__main__:2025-04-09 17:15:27.237723 - Path to working directory : <function Grid_Game.resource_path at 0x0000022D05836DE0>
+INFO:__main__:2025-04-09 17:15:27.237723 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 17:15:27.237723 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:15:27.237723 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:15:33.085633 - Game executed successfully.
+INFO:__main__:2025-04-09 17:15:54.363302 - New game started
+INFO:__main__:2025-04-09 17:15:54.363302 - Path to working directory : <function Grid_Game.resource_path at 0x0000027756296DE0>
+INFO:__main__:2025-04-09 17:15:54.363302 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 17:15:54.363302 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:15:54.363302 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:15:58.927841 - Game executed successfully.
+INFO:__main__:2025-04-09 17:16:21.441656 - New game started
+INFO:__main__:2025-04-09 17:16:21.441656 - Path to working directory : <function Grid_Game.resource_path at 0x00000184A3536DE0>
+INFO:__main__:2025-04-09 17:16:21.441656 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 17:16:21.441656 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:16:21.441656 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:16:39.479694 - Game executed successfully.
+INFO:__main__:2025-04-09 17:16:40.965761 - New game started
+INFO:__main__:2025-04-09 17:16:40.965761 - Path to working directory : <function Grid_Game.resource_path at 0x00000232DA986DE0>
+INFO:__main__:2025-04-09 17:16:40.965761 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 17:16:40.965761 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:16:40.965761 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:17:31.179809 - Game executed successfully.
+INFO:__main__:2025-04-09 17:18:03.673498 - New game started
+INFO:__main__:2025-04-09 17:18:03.673498 - Path to working directory : <function Grid_Game.resource_path at 0x0000024C7ECC6DE0>
+INFO:__main__:2025-04-09 17:18:03.673498 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 17:18:03.673498 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:18:03.673498 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:18:14.226984 - Game executed successfully.
+INFO:__main__:2025-04-09 17:18:31.653395 - New game started
+INFO:__main__:2025-04-09 17:18:31.653395 - Path to working directory : <function Grid_Game.resource_path at 0x0000019DA5E16DE0>
+INFO:__main__:2025-04-09 17:18:31.653395 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 17:18:31.653395 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:18:31.653395 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:__main__:2025-04-09 17:18:36.381272 - New game started
+INFO:__main__:2025-04-09 17:18:36.381272 - Path to working directory : <function Grid_Game.resource_path at 0x0000016043146DE0>
+INFO:__main__:2025-04-09 17:18:36.381272 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 17:18:36.381272 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:18:36.381272 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:19:05.263289 - Game executed successfully.
+INFO:__main__:2025-04-09 17:19:06.611329 - New game started
+INFO:__main__:2025-04-09 17:19:06.611329 - Path to working directory : <function Grid_Game.resource_path at 0x000001AF6FDC6DE0>
+INFO:__main__:2025-04-09 17:19:06.611329 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\current_game.db
+INFO:__main__:2025-04-09 17:19:06.611329 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:19:06.611329 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:29:04.888217 - Game executed successfully.
+INFO:__main__:2025-04-09 17:29:05.221475 - New game started
+INFO:__main__:2025-04-09 17:29:05.221475 - Path to working directory : <function Grid_Game.resource_path at 0x00000233BF736DE0>
+INFO:__main__:2025-04-09 17:29:05.221475 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\saves\saved_games.db
+INFO:__main__:2025-04-09 17:29:05.221475 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:29:05.221475 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:29:14.286605 - Game executed successfully.
+INFO:__main__:2025-04-09 17:37:23.117378 - New game started
+INFO:__main__:2025-04-09 17:37:23.117378 - Path to working directory : <function Grid_Game.resource_path at 0x0000019DB429B9C0>
+INFO:__main__:2025-04-09 17:37:23.117378 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\saves\saved_games.db
+INFO:__main__:2025-04-09 17:37:23.117378 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:37:23.117378 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:37:36.179871 - Game executed successfully.
+INFO:__main__:2025-04-09 17:39:45.122715 - New game started
+INFO:__main__:2025-04-09 17:39:45.122715 - Path to working directory : <function Grid_Game.resource_path at 0x000001D590DF6CA0>
+INFO:__main__:2025-04-09 17:39:45.122715 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\saves\saved_games.db
+INFO:__main__:2025-04-09 17:39:45.122715 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 17:39:45.122715 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 17:39:51.932306 - Game executed successfully.
+INFO:__main__:2025-04-09 18:29:29.890521 - New game started
+INFO:__main__:2025-04-09 18:29:29.890521 - Path to working directory : <function Grid_Game.resource_path at 0x000001D3F7AE9D00>
+INFO:__main__:2025-04-09 18:29:29.890521 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\saves\saved_games.db
+INFO:__main__:2025-04-09 18:29:29.890521 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 18:29:29.890521 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:root:2025-04-09 18:29:36.077234 - Game executed successfully.
+INFO:__main__:2025-04-09 18:31:40.261480 - New game started
+INFO:__main__:2025-04-09 18:31:40.261480 - Path to working directory : <function Grid_Game.resource_path at 0x000001FC7829A200>
+INFO:__main__:2025-04-09 18:31:40.261480 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\saves\saved_games.db
+INFO:__main__:2025-04-09 18:31:40.261480 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\lib\tttgame.log
+INFO:__main__:2025-04-09 18:31:40.261480 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\game\images
+INFO:__main__:2025-04-09 18:37:05.691526 - New game started
+INFO:__main__:2025-04-09 18:37:05.691526 - Path to working directory : <function Grid_Game.resource_path at 0x000002A42E54ACA0>
+INFO:__main__:2025-04-09 18:37:05.691526 - Path to save files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\dist\TicTacToe\_internal\game\saves\saved_games.db
+INFO:__main__:2025-04-09 18:37:05.691526 - Path to log files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\dist\TicTacToe\_internal\lib\tttgame.log
+INFO:__main__:2025-04-09 18:37:05.691526 - Path to image files : C:\Users\Caleb Hull\cloned repos\CPSC-101---Project\dist\TicTacToe\_internal\game\images
+INFO:root:2025-04-09 18:37:07.357293 - Game executed successfully.
