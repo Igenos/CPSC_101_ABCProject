@@ -1,2 +1,2 @@
-
-                    self.buttons[y_dim][x_dim]["state"] 
+        self.root.columnconfigure(0, weight= 1)
+        self.root.rowconfigure(0, weight=1)

@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 # Used for saving games to save_directory
 import sqlite3
 

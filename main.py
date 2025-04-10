@@ -1,5 +1,5 @@
 # Import assests from the ABC. Includes Board_State, Move, and Grid_Game
-from lib.Grid_GameABC import *
+from Grid_GameABC import *
 
 class TTT_Board(Board_State):
     def __init__(self, turn = 1, current_player = 1, moves_played = None, player_count = 2, is_winner = False):
@@ -12,7 +12,7 @@ class tic_tac_toe(Grid_Game):
         super().__init__()
 
         # Find out where we are.
-        self.save_directory: Path = Path(self.resource_path('lib/current_game.db'))
+        self.save_directory: Path = Path(self.resource_path('game/saves/saved_games.db'))
         self.log_directory: Path = Path(self.resource_path('lib/tttgame.log'))
         self.image_assets_directory: Path = Path(self.resource_path('game/images/')).absolute()
 
@@ -45,46 +45,44 @@ class tic_tac_toe(Grid_Game):
         self.root = Tk()
         self.root.title("Tic-Tac-Toe")
 
-        # Layout will use three frames, middle frame will have the game grid as it's child so that we can pull x, y co-ords off it for logic.
-        self.top_frame = Frame(self.root, padx= 5, pady= 5)
-        self.main_frame = Frame(self.root, padx= 5, pady=5)
-        self.bottom_frame = Frame(self.root, padx= 5, pady= 5)
+        # Layout will use three frames, main frame will have the game grid as it's child so that we can pull x, y co-ords off it for logic.
         
-        # Logo image.
+        # Top frame for logo.
+        self.top_frame = Frame(self.root)
+        self.top_frame.grid(row=0, column=0, columnspan=self.x_max, sticky='N')
         logo_image = PhotoImage(file=self.image_assets_directory / 'ttt_logo.png')
-        print(self.image_assets_directory)
-        print()
-        self.logo = ttk.Label(self.root)
-        self.logo['image'] = logo_image
-        self.logo.grid(row= 0, column=0)
+        self.logo = ttk.Label(self.top_frame, image= logo_image)
+        self.logo.grid(row= 0, column=0, columnspan=self.x_max, sticky='N' )        
         
-        # Create grid to contain ttt buttons
-        self.main_frame.grid(row=self.y_max+3, column=0, columnspan=self.x_max, sticky=(N,W,E,S))
-        self.root.columnconfigure(0, weight= 1)
-        self.root.rowconfigure(0, weight=1)
-        
-        # Create message label and reset button
-        self.message_label = Label(self.main_frame, text="Player 1's turn", font=("Helvetica", 12))
-        self.message_label.grid(row=self.y_max +2, column=1)
-        
-        # Create Reset button.
-        self.reset_button = Button(self.main_frame, text="Reset", command=self.reset_game)
-        self.reset_button.grid(row=self.y_max+3, column=1)
+        # Main frame for game elements with m x n grid to contain ttt buttons.
+        self.main_frame = Frame(self.root)
+        self.main_frame.grid(row=1, column=0, columnspan=self.x_max, sticky=(N,W,E,S), padx=20)
+        # self.main_frame.columnconfigure(0, weight=1)
+        # self.main_frame.rowconfigure(0, weight=1)
 
-        # Create a m x n grid for the game.
         self.buttons = []
         for y_grid in range(self.y_max):
             row_of_buttons = []
             for x_grid in range(self.x_max):
                 button = Button(
-                    self.main_frame, text="",font=("Helvetica", 20), width=10, height=5,
+                    self.main_frame, text="",font=("Helvetica", 20), width=5, height=2,
                     command=lambda x=x_grid, y=y_grid: self.game_loop_onclick(x, y)
                 )
                 button.grid(row=y_grid, column=x_grid)
                 row_of_buttons.append(button)
             self.buttons.append(row_of_buttons)
 
-
+        # Bottom frame for messages and game control buttons.
+        self.bottom_frame = Frame(self.root)
+        self.bottom_frame.grid(row=3, column=0, columnspan=self.x_max, sticky='N' )
+        
+        # Create message label and reset button
+        self.message_label = Label(self.bottom_frame, text="Player 1's turn", font=("Helvetica", 12))
+        self.message_label.grid(row=0, column=0, columnspan=self.x_max, sticky='N', pady=10)
+        
+        # Create Reset button.
+        self.reset_button = Button(self.bottom_frame, text="Reset", command=self.reset_game)
+        self.reset_button.grid(row=1, column=0, columnspan=self.x_max, sticky='N', pady=10)
 
         # Start GUI mainloop.
         self.root.mainloop()
